@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-labelledby="title description">
+  <title id="title">Laboratory Project Management platform flow</title>
+  <desc id="description">Data flows from the user to the interface, API and database.</desc>
+  <defs>
+    <style>
+      .canvas { fill: #f7fafc; }
+      .line { fill: none; stroke: #6b7c93; stroke-width: 3; stroke-dasharray: 8 10; }
+      .node { fill: #ffffff; stroke: #1c1c63; stroke-width: 3; }
+      .label { fill: #1c1c63; font-family: Arial, sans-serif; font-size: 20px; font-weight: 700; text-anchor: middle; }
+      .pulse { fill: #ec6b3a; }
+      .pulse-one { animation: travel-one 4s linear infinite; }
+      .pulse-two { animation: travel-two 4s linear infinite 1s; }
+      .pulse-three { animation: travel-three 4s linear infinite 2s; }
+      @keyframes travel-one { from { transform: translateX(0); opacity: 0; } 15% { opacity: 1; } to { transform: translateX(250px); opacity: 0; } }
+      @keyframes travel-two { from { transform: translateX(0); opacity: 0; } 15% { opacity: 1; } to { transform: translateX(250px); opacity: 0; } }
+      @keyframes travel-three { from { transform: translateX(0); opacity: 0; } 15% { opacity: 1; } to { transform: translateX(250px); opacity: 0; } }
+    </style>
+  </defs>
+  <rect class="canvas" width="1200" height="220" rx="18" />
+  <path class="line" d="M 210 110 H 990" />
+  <circle class="pulse pulse-one" cx="205" cy="110" r="7" />
+  <circle class="pulse pulse-two" cx="455" cy="110" r="7" />
+  <circle class="pulse pulse-three" cx="705" cy="110" r="7" />
+  <g>
+    <circle class="node" cx="120" cy="110" r="55" />
+    <text class="label" x="120" y="106">User</text>
+    <text class="label" x="120" y="132" font-size="14">Roles</text>
+  </g>
+  <g>
+    <circle class="node" cx="370" cy="110" r="55" />
+    <text class="label" x="370" y="106">Frontend</text>
+    <text class="label" x="370" y="132" font-size="14">React + Vite</text>
+  </g>
+  <g>
+    <circle class="node" cx="620" cy="110" r="55" />
+    <text class="label" x="620" y="106">API REST</text>
+    <text class="label" x="620" y="132" font-size="14">Spring Boot</text>
+  </g>
+  <g>
+    <circle class="node" cx="870" cy="110" r="55" />
+    <text class="label" x="870" y="106">Data</text>
+    <text class="label" x="870" y="132" font-size="14">MySQL</text>
+  </g>
+  <g>
+    <circle class="node" cx="1090" cy="110" r="55" />
+    <text class="label" x="1090" y="106">Tracking</text>
+    <text class="label" x="1090" y="132" font-size="14">Laboratory</text>
+  </g>
+</svg>

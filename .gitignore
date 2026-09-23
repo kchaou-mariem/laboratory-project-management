@@ -1,0 +1,46 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Java / Maven / Spring Boot
+**/target/
+**/bin/
+*.class
+*.jar
+*.war
+hs_err_pid*
+
+# Node / Vite
+**/node_modules/
+**/dist/
+**/.vite/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.local
+
+# IDEs and operating system files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
